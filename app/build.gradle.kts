@@ -44,6 +44,8 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.compose) // Glide for Compose
     implementation(libs.kotlinx.serialization.json) // Ensure you're using the correct version
+    implementation(libs.coil)
+    implementation(libs.coil.network.okhttp)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

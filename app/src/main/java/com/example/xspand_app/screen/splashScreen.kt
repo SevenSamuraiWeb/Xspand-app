@@ -69,8 +69,6 @@ fun SplashScreen(modifier: Modifier =Modifier,navigateToLogin:()->Unit){
                 painter = painterResource(R.drawable.ellipse_4),
                 contentDescription = null
             )
-
-
     }
 }
 

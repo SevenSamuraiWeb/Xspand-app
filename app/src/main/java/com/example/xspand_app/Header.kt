@@ -11,9 +11,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Header(hText:String,color: Color){
+fun Header(hText:String,color: Color,modifier: Modifier=Modifier){
     Row(
-        modifier= Modifier
+        modifier= modifier
             .fillMaxWidth()
             .background(color),
         horizontalArrangement = Arrangement.Center

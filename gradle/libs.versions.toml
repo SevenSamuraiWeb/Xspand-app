@@ -1,5 +1,6 @@
 [versions]
 agp = "8.8.0"
+coilNetworkOkhttp = "3.0.4"
 compose = "1.0.0-alpha.1"
 composeCharts = "0.0.14"
 kotlin = "2.0.0"
@@ -16,6 +17,8 @@ navigationCompose = "2.8.7"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+coil = { module = "io.coil-kt.coil3:coil", version.ref = "coilNetworkOkhttp" }
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilNetworkOkhttp" }
 compose = { module = "com.github.bumptech.glide:compose", version.ref = "compose" }
 compose-charts = { module = "io.github.ehsannarmani:compose-charts", version.ref = "composeCharts" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

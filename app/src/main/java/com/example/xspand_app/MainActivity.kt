@@ -1,5 +1,6 @@
 package com.example.xspand_app
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,9 +10,14 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import com.example.xspand_app.data.sampleXRayItems
 import com.example.xspand_app.screen.LoginScreen
+import com.example.xspand_app.screen.PinchToZoomView
+import com.example.xspand_app.screen.TestPinchToZoomView
+import com.example.xspand_app.screen.XRayDashboard
+import com.example.xspand_app.screen.XrayPatientDetailsScreen
 import com.example.xspand_app.ui.theme.XspandappTheme
-
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +25,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             XspandappTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    NavigationGraph(navController = navController,Modifier.padding(innerPadding))
+                Scaffold(modifier = Modifier.fillMaxSize()) {  innerPadding ->
+                    XrayPatientDetailsScreen(
+                        XrayItem = sampleXRayItems[0]
+                    )
                 }
             }
         }

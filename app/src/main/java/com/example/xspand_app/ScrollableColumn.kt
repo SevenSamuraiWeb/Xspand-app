@@ -8,23 +8,21 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
-import com.example.xspand_app.data.Person
+import coil.compose.rememberAsyncImagePainter
+import com.example.xspand_app.data.Patient
 
 @Composable
-fun ScrollableColumn(items:List<Person>,modifier: Modifier){
-
-
+fun ScrollableColumn(items:List<Patient>,modifier: Modifier){
     LazyColumn(modifier) {
 
     }
 }
 
 @Composable
-fun ScrollableItem(item:Person){
+fun ScrollableItem(item:Patient){
     Row(modifier=Modifier.fillMaxWidth(0.8f),
         horizontalArrangement = Arrangement.Center
     ) {
-        val paint:Painter = rememberAsyncImagePainter(item.image)
-        Image(painter =())
+
     }
 }

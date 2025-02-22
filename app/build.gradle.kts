@@ -40,12 +40,18 @@ android {
 }
 
 dependencies {
+    // If using LiveData or ViewModel with Compose
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation (libs.androidx.navigation.compose.v253)
+    implementation (libs.coil.kt.coil.compose)
     implementation(libs.compose.charts)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.compose) // Glide for Compose
     implementation(libs.kotlinx.serialization.json) // Ensure you're using the correct version
     implementation(libs.coil)
-    implementation(libs.coil.network.okhttp)
+    implementation(libs.coil.network.okhttp) // Check for latest version
+
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

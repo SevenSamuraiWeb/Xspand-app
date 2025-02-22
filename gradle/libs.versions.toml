@@ -1,5 +1,8 @@
 [versions]
+accompanistZoom = "0.28.0"
 agp = "8.8.0"
+androidxNavigationCompose = "2.5.3"
+coilComposeVersion = "2.3.0"
 coilNetworkOkhttp = "3.0.4"
 compose = "1.0.0-alpha.1"
 composeCharts = "0.0.14"
@@ -15,9 +18,13 @@ composeBom = "2024.04.01"
 navigationCompose = "2.8.7"
 
 [libraries]
+accompanist-zoom = { module = "com.google.accompanist:accompanist-zoom", version.ref = "accompanistZoom" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-navigation-compose-v253 = { module = "androidx.navigation:navigation-compose", version.ref = "androidxNavigationCompose" }
 coil = { module = "io.coil-kt.coil3:coil", version.ref = "coilNetworkOkhttp" }
+coil-kt-coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
 coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilNetworkOkhttp" }
 compose = { module = "com.github.bumptech.glide:compose", version.ref = "compose" }
 compose-charts = { module = "io.github.ehsannarmani:compose-charts", version.ref = "composeCharts" }

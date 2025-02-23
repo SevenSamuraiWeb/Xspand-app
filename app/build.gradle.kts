@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -50,6 +51,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json) // Ensure you're using the correct version
     implementation(libs.coil)
     implementation(libs.coil.network.okhttp) // Check for latest version
+    implementation(libs.numberpicker)
 
 
 
@@ -61,6 +63,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.benchmark.macro)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,7 +1,7 @@
 package com.example.xspand_app.data
 
-import java.util.UUID
 
+import java.util.UUID
 data class XrayItem(
     val scanId: String = UUID.randomUUID().toString(),   // Unique ID for the scan
     val imageUrl: String? = null,                        // URL to the X-ray image
@@ -13,7 +13,7 @@ data class XrayItem(
     val noFindingsDetected: Boolean = false,             // Flag if no findings
     val radiologistReport: String? = null,               // Radiologist's written report
     val scanTimestamp: String? = null                    // Time of the scan
-)
+): java.io.Serializable
 
 
 val dummyDoctor = Doctor(

@@ -1,6 +1,8 @@
 package com.example.xspand_app.screen
 
 import com.example.xspand_app.R
+import com.example.xspand_app.data.XrayItem
+import kotlinx.serialization.Serializable
 
 sealed class Screen(val route:String){
     data object SplashScreen:Screen("splashScreen")
@@ -18,6 +20,10 @@ sealed class Screen(val route:String){
         data object Home:RadiologistBottomScreen("homePageRadiologist", R.drawable.ic_home,"Home")
         data object Profile:RadiologistBottomScreen("profileRadiologist", R.drawable.ic_profile,"Profile")
     }
+    @Serializable
+    data class XrayDetailsScreen(val scanId:String)
+    @Serializable
+    data class PatientDetailsScreen(val patientId:String,val isPast:Boolean = false)
 }
 val screensInDoctorBottom = listOf(
     Screen.DoctorBottomScreen.Home,

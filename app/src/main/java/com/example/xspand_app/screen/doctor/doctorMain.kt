@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.xspand_app.DoctorNavGraph
@@ -56,10 +57,8 @@ fun DoctorMain() {
                     }
                 }
             }
-
         }
-    ) {
-            padding->
-        DoctorNavGraph(navController, modifier = Modifier.padding(padding))
+    ) { padding ->
+        DoctorNavGraph(navController = navController, modifier = Modifier.padding(padding))
     }
 }

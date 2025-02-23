@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "379150697906",
+    "project_id": "xspand-db058",
+    "storage_bucket": "xspand-db058.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379150697906:android:33b860819a6f78fcac90ab",
+        "android_client_info": {
+          "package_name": "com.example.storagetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFY8Fz9OhsceIjbCD8OUAcOfIcOsz0MHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379150697906:android:73332f530d6132e0ac90ab",
+        "android_client_info": {
+          "package_name": "com.example.xspand_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFY8Fz9OhsceIjbCD8OUAcOfIcOsz0MHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

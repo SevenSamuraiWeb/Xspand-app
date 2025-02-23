@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -51,12 +52,14 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import coil.compose.rememberAsyncImagePainter
 import com.example.xspand_app.data.XrayItem
+import com.example.xspand_app.data.sampleXRayItems
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun XrayPatientDetailsScreen(XrayItem: XrayItem) {
+fun XrayPatientDetailsScreen(scanId:String) {
     var prescription by remember { mutableStateOf("") }
     var showFullScreenImage by remember { mutableStateOf(false) }
+    val XrayItem = sampleXRayItems.find { it.scanId == scanId }!!
     Scaffold(
         topBar = {
             Card(
@@ -90,7 +93,7 @@ fun XrayPatientDetailsScreen(XrayItem: XrayItem) {
     ) { paddingValues ->
         Column(
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth().fillMaxHeight(0.9f)
                 .background(Color.White)
                 .padding(paddingValues).verticalScroll(
                     rememberScrollState()

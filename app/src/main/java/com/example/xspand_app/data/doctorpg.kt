@@ -17,4 +17,3 @@ data class Doctor(
     val qualificationDetails: String? = null,
     val yearsOfExperience: Int? = null
 )
-
